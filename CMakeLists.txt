@@ -1,5 +1,5 @@
 project(arborescence)
-cmake_minimum_required(VERSION 3.3)
+cmake_minimum_required(VERSION 3.5)
 
 include(cmake/CPM.cmake)
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/;${CMAKE_MODULE_PATH}")
@@ -16,7 +16,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native -Wno-c++11-narrowing -Wno-
 
 set(INCLUDES
   # suitesparse
-  openmp
+  # openmp
   eigen #Eigen3_WITH_BLAS
   # spectra
   # fast_matrix_market
